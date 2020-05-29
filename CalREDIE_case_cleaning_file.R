@@ -117,7 +117,7 @@ combined %>%
 
 ################################## calredie + verily #################################
 all <- combined %>%
-  bind_rows(verily_only) %>% # append the verily data
+  bind_rows(verily_only) %>% # append the verily data if you have it, otherwise, comment out this line
   filter(!is.na(FirstName)) %>% # get rid of any rows without needed info
   mutate(DOB = case_when(is.na(DOB) ~ as.Date("1900-01-01"), # make blank birthdays 1/1/1900
                          TRUE ~ DOB))
