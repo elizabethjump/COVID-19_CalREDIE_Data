@@ -2,16 +2,6 @@
 ################################ Lab Data for Dashboard ###############################
 #######################################################################################
 
-# check your library. Make sure the library is in a 'write-able' place so that you can install packages. If it's on a drive that you can't edit (ex: the C: drive, you won't be able to install any packages)
-.libPaths()
-
-# if needed, change your library. Put the path here in quotes. Ex: "H:/R-4.0.0/library"
-.libPaths("path here")
-
-# Install any packages that you need. Put the package name in quotes when you install it. This only needs to be done once
-## Ex:
-install.packages("package name here")
-
 # library (enable) these packages. You only need to install the packages once, but you need to library them each time you open an R session
 library(dplyr)
 library(tidyr)
